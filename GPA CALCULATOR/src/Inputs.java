@@ -6,11 +6,13 @@ public class Inputs {
     public static void Input() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Enter the course unit.");
+        System.out.println("Enter the number of courses");
     
         try{
-            String input = reader.readLine();
-            System.out.println("You entered: " + input);
+            String courses = reader.readLine();
+            int CourseNumber = Integer.parseInt(courses);
+
+            System.out.println("You entered: " + CourseNumber);
     
         }catch(IOException e){
             e.printStackTrace();
