@@ -19,8 +19,11 @@ public class Inputs {
     
                 System.out.println("Enter your grade: ");
                 String Grade = reader.readLine();
+
+                System.out.println("Enter the Credit Unit: ");
+                int Credit = Integer.parseInt(reader.readLine());
     
-                Courses course = new Courses(CourseName, CourseCode, Grade);
+                Courses course = new Courses(CourseName, CourseCode, Grade, Credit);
                 courseList.add(course);
     
                 System.out.println("Next course: (yes/no)");

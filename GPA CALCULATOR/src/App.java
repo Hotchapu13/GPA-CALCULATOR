@@ -9,7 +9,7 @@ public class App {
             System.out.println("Course Name: " + course.getCourseName());
             System.out.println("Course Code: " + course.getCourseCode());
             System.out.println("Grade: " + course.getGrade());
-            System.out.println("\n");
+            System.out.println("");
         }
     }
 }
