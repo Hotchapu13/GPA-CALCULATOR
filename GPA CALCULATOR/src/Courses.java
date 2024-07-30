@@ -12,35 +12,39 @@ public class Courses {
         this.Credit = Credit;
         switch(Grade){
             case "A":
-                GradePoint = 5.0 * Credit;
+                this.GradePoint = 5.0 * Credit;
                 break;
     
             case "B+":
-                GradePoint = 4.5 * Credit;
+                this.GradePoint = 4.5 * Credit;
                 break;
     
             case "B":
-                GradePoint = 4.0 * Credit;
+                this.GradePoint = 4.0 * Credit;
                 break;
     
             case "C+":
-                GradePoint = 3.5 * Credit;
+                this.GradePoint = 3.5 * Credit;
                 break;
     
             case "C":
-                GradePoint = 3.0 * Credit;
+                this.GradePoint = 3.0 * Credit;
                 break;
     
             case "D+":
-                GradePoint = 2.5 * Credit;
+                this.GradePoint = 2.5 * Credit;
                 break;
     
             case "D":
-                GradePoint = 2.0 * Credit;
+                this.GradePoint = 2.0 * Credit;
                 break;
     
             case "F":
-                GradePoint = 0 * Credit;
+                this.GradePoint = 0 * Credit;
+                break;
+
+            default:
+                System.out.println("Invalid grade entered.");
                 break;
         }
     }
@@ -76,4 +80,9 @@ public class Courses {
     public int getCredit() {
         return Credit;
     }
+
+    public double getGradePoint() {
+        return GradePoint;
+    }
+
 }

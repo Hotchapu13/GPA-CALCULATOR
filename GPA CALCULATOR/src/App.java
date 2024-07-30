@@ -6,10 +6,13 @@ public class App {
         ArrayList<Courses> courses = inputs.Input();
 
         for (Courses course : courses) {
+            System.out.println("");
+            System.out.println("_________RESULTS_________");
             System.out.println("Course Name: " + course.getCourseName());
             System.out.println("Course Code: " + course.getCourseCode());
             System.out.println("Grade: " + course.getGrade());
             System.out.println("");
         }
+        System.out.println("Your GPA is " + inputs.showGPA());
     }
 }
