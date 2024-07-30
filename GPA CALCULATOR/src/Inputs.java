@@ -1,21 +1,37 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Inputs {
-    public static void Input() {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        System.out.println("Enter the number of courses");
+    ArrayList<Courses> courseList = new ArrayList<Courses>();
     
-        try{
-            String courses = reader.readLine();
-            int CourseNumber = Integer.parseInt(courses);
-
-            System.out.println("You entered: " + CourseNumber);
+    public ArrayList<Courses> Input() {
+       
+        try( BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            String continueInput;
+            do{
+                System.out.println("Enter course name: ");
+                String CourseName = reader.readLine();
     
-        }catch(IOException e){
-            e.printStackTrace();
+                System.out.println("Enter course code ");
+                String CourseCode = reader.readLine();
+    
+                System.out.println("Enter your grade: ");
+                String Grade = reader.readLine();
+    
+                Courses course = new Courses(CourseName, CourseCode, Grade);
+                courseList.add(course);
+    
+                System.out.println("Next course: (yes/no)");
+                continueInput = reader.readLine();
+    
+            } while (continueInput.equalsIgnoreCase("yes"));
+
+        } catch (Exception e) {
+            System.err.println("An error occurred while reading input: " + e.getMessage());
         }
+
+        return courseList;
     }
 }
