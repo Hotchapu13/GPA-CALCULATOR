@@ -7,28 +7,28 @@ public class Inputs {
     ArrayList<Courses> courseList = new ArrayList<Courses>();
     
     public ArrayList<Courses> Input() {
-       
-        try( BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             String continueInput;
-            do{
+            do {
                 System.out.println("Enter course name: ");
                 String CourseName = reader.readLine();
-    
+
                 System.out.println("Enter course code ");
                 String CourseCode = reader.readLine();
-    
+
                 System.out.println("Enter your grade: ");
-                String Grade = reader.readLine();
+                String AlphaGrade = reader.readLine();
 
                 System.out.println("Enter the Credit Unit: ");
                 int Credit = Integer.parseInt(reader.readLine());
-    
-                Courses course = new Courses(CourseName, CourseCode, Grade, Credit);
+
+                Courses course = new Courses(CourseName, CourseCode, AlphaGrade, Credit);
                 courseList.add(course);
-    
+
                 System.out.println("Next course: (yes/no)");
                 continueInput = reader.readLine();
-    
+
             } while (continueInput.equalsIgnoreCase("yes"));
 
         } catch (Exception e) {
@@ -37,4 +37,8 @@ public class Inputs {
 
         return courseList;
     }
+    
+    // public int GradeCalc() {
+        
+    // }
 }
