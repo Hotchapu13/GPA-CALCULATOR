@@ -2,10 +2,10 @@ public class Courses {
     private String CourseName;
     private String CourseCode;
     private String Grade;
-    private int Credit;
+    private double Credit;
     private double GradePoint;
 
-    public Courses(String CourseName, String CourseCode, String Grade, int Credit) {
+    public Courses(String CourseName, String CourseCode, String Grade, double Credit) {
         this.CourseCode = CourseCode;
         this.CourseName = CourseName;
         this.Grade = Grade;
@@ -61,7 +61,7 @@ public class Courses {
         this.Grade = Grade;
     }
 
-    public void setCredit(int Credit) {
+    public void setCredit(double Credit) {
         this.Credit = Credit;
     }
 
@@ -77,7 +77,7 @@ public class Courses {
         return Grade;
     }
 
-    public int getCredit() {
+    public  double getCredit() {
         return Credit;
     }
 

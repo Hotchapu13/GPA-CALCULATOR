@@ -12,6 +12,8 @@ public class App {
             System.out.println("Grade: " + course.getGrade());
             System.out.println("");
         }
+        System.out.println("total credits "+ inputs.getTotCred());
+        System.out.println("total grade point "+ inputs.getTotGP());
         System.out.println("___RESULTS___");
         System.out.println("Your GPA is " + inputs.showGPA());
     }
