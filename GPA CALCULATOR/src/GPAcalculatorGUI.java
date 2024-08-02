@@ -13,13 +13,13 @@
 import javax.swing.JFrame;
 
 public class GPAcalculatorGUI extends JFrame {
-    JFrame frame;
 
     GPAcalculatorGUI() {
-        frame.setSize(450, 450);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(null);
-        frame.setVisible(true);
+        setSize(450, 450);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("GPACalculator GUI");
+        setLayout(null);
+        setVisible(true);
 
     }
     public static void main(String[] args) {
