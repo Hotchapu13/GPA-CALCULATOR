@@ -1,3 +1,14 @@
+
+/**
+ * Compilation:   javac App.java
+ * Execution:     java  App
+ * Dependencies:  Inputs.java Courses.java 
+ * 
+ * @author Nuwe Bryant Nyero
+ * 
+ * CLI application to calculate GPA 
+ * 
+ */
 import java.util.ArrayList;
 
 public class App {
