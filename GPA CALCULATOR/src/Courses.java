@@ -1,9 +1,11 @@
+/**
+ * 
+ */
+
+ // REMINDER: REFER TO c:\Users\nuweb\OneDrive\Desktop\testing\Course.java FOR CLASS IMPLEMENTATION 
 public class Courses {
-    private String CourseName;
-    private String CourseCode;
-    private String Grade;
-    private double Credit;
-    private double GradePoint;
+    private String CourseName, Grade, CourseCode;
+    private double Credit, GradePoint;
 
     public Courses(String CourseName, String CourseCode, String Grade, double Credit) {
         this.CourseCode = CourseCode;
@@ -86,3 +88,4 @@ public class Courses {
     }
 
 }
+
