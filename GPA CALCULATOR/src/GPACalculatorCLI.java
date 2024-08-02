@@ -11,7 +11,7 @@
  */
 import java.util.ArrayList;
 
-public class App {
+public class GPACalculatorCLI {
     public static void main(String[] args) throws Exception {
         Inputs inputs = new Inputs();
         ArrayList<Courses> courses = inputs.Input();

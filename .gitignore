@@ -1,4 +1,5 @@
 .vscode/
 GPA CALCULATOR/src/Inputs.class
-GPA CALCULATOR/src/App.class
+GPA CALCULATOR/src/GPACalculatorCLI.class
+GPA CALCULATOR/src/GPACalculatorGUI.class
 GPA CALCULATOR/src/Courses.class

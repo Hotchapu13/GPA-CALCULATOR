@@ -12,6 +12,18 @@
 
 import javax.swing.JFrame;
 
-public class GPAcalculatorGUI extends JFrame{
-    
+public class GPAcalculatorGUI extends JFrame {
+    JFrame frame;
+
+    GPAcalculatorGUI() {
+        frame.setSize(450, 450);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+        frame.setVisible(true);
+
+    }
+    public static void main(String[] args) {
+        new GPAcalculatorGUI();
+    }
+
 }
