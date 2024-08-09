@@ -11,6 +11,7 @@ public class Inputs {
     double GP;
     int TotalCredits = 0;
     double TotalGP = 0;
+    boolean active = true;
 
     public ArrayList<Courses> Input() {
 
@@ -18,6 +19,7 @@ public class Inputs {
         // closes after execution
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
 
+            
             do {
                 System.out.println("Enter course name: ");
                 String CourseName = reader.readLine();
@@ -39,11 +41,13 @@ public class Inputs {
                 TotalCredits += Credit;
                 TotalGP += GP;
 
-                System.out.println("Next course: (yes/no)");
+                System.out.println("Type 'done' to finish: ");
                 System.out.println("");
                 continueInput = reader.readLine();
+                if(continueInput.equalsIgnoreCase("done"))
+                    active = false;
 
-            } while (continueInput.equalsIgnoreCase("yes"));
+            } while (active);
 
         } catch (Exception e) {
             System.err.println("An error occurred while reading input: " + e.getMessage());

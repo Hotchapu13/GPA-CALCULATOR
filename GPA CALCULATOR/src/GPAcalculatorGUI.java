@@ -20,6 +20,7 @@ public class GPAcalculatorGUI extends JFrame {
         setTitle("GPACalculator GUI");
         setLayout(null);
         setVisible(true);
+        setLocationRelativeTo(null);
 
     }
     public static void main(String[] args) {
