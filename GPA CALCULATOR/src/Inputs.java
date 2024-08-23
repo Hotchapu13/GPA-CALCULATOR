@@ -41,7 +41,7 @@ public class Inputs {
                 TotalCredits += Credit;
                 TotalGP += GP;
 
-                System.out.println("Type 'done' to finish: ");
+                System.out.println("Type 'done' to finish or Enter to continue: ");
                 System.out.println("");
                 continueInput = reader.readLine();
                 if(continueInput.equalsIgnoreCase("done"))
