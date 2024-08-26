@@ -20,8 +20,10 @@ public class SignInGUI {
         label2.setBounds( 30,100, 100,30);
         button1 = new JButton("Sign In");
         button1.setBounds(100, 200, 100, 30);
+        button1.setFocusable(false);
         button2 = new JButton("Cancel");
         button2.setBounds(300, 200, 100, 30);
+        button2.setFocusable(false);
         textField1 = new JTextField("please enter your student email");
         textField1.setBounds(150, 50, 250, 30);
         password = new JPasswordField();
