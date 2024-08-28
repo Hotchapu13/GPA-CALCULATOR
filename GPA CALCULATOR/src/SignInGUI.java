@@ -11,7 +11,7 @@ public class SignInGUI {
     JPasswordField password;
 
     // building the constructor for the frame
-    //positioning @ component onto the frame
+    // positioning @ component onto the frame
     SignInGUI(){
         frame = new JFrame("Sign In");
         label1 = new JLabel("Student Email");
@@ -29,7 +29,7 @@ public class SignInGUI {
         password = new JPasswordField();
         password.setBounds(150, 100, 250, 30);
 
-        //adding all the components to the frame(button, labels and password fields)
+        // adding all the components to the frame(button, labels and password fields)
         frame.add(label1);
         frame.add(label2);
         frame.add(button1);
@@ -37,12 +37,12 @@ public class SignInGUI {
         frame.add(textField1);
         frame.add(password);
 
-        //setting the attributes of my frame
-        frame.setSize(500,300);                         //size of the frame
-        frame.setResizable(false);                                   //prevents re-sizing of the frame
+        // setting the attributes of my frame
+        frame.setSize(500,300); // size of the frame
+        frame.setResizable(false); // prevents re-sizing of the frame
         frame.setLayout(null);
-        frame.setVisible(true);                                      //makes the frame visible on the screen
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        //ensures the application closes on pressing the exit button in the frame
+        frame.setVisible(true); // makes the frame visible on the screen
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // ensures the application closes on pressing the exit button in the frame
 
     }
 
